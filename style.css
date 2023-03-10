@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.logo{
+    padding: 1.5rem 1.8rem;
+    height: 7rem;
+    width: 16rem;
+
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    position:relative;
+    
+    z-index: 10px;
+    top: 00px;
+    bottom: 00px;
+}
+.navlist{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem;
+    gap: 4.8rem;
+    position: relative;
+}
+.navlinklist{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem;
+    gap: 4.8rem;
+}
+.navlist .navlink a {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+
+}
+.navlink a:hover{
+    color: rgb(172, 232, 9);
+}
+.main{
+    background-color: black;
+    color: white;
+    height: 50rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+.service{
+    background-color: rgb(218, 8, 8);
+    color: rgb(7, 238, 208);
+    height: 50rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+
+}
+.search{
+    display: none;
+}
+
+/*-----media query------?*/
+@media (max-width:62rem) {
+    .search{
+        display: block;
+        z-index: 999;
+    }
+    .navlinklist{
+       width:30vw;
+       height: 100vw;
+       background-color: gray;
+       position: absolute;
+       top: 0;
+       left:0px;
+       opacity: 0;
+    }
+    .menu{
+        border: 3px solid black;
+        box-shadow: 1px 1px 1px grey;
+        top: 0;
+        
+        
+    }
+}
